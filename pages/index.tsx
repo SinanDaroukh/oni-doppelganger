@@ -1,18 +1,21 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import DiscountBanner from '../components/DiscountBanner'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import DiscountBanner from "../components/DiscountBanner";
+import Navbar from "../components/Navbar";
+import VideoBanner from "../components/VideoBanner";
 
 const Home: NextPage = () => {
   return (
-    <div className="">
-
+    <div className="bg-zinc-800">
       <Head>
-        <title>Create Next App</title>
+        <title>ONI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <DiscountBanner />
+      <Navbar />
+      <VideoBanner />
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
@@ -21,12 +24,12 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
