@@ -1,5 +1,5 @@
 export default function DiscountBanner() {
     return (
-        <div className="text-blue-600">Hello Team I like the web</div >
+        <div className="text-blue-600 bg-black">👹 5% de réduction avec le code ONIDONO pour 2 articles ou plus 👹</div>
     );
 }
