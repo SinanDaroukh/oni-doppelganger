@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
+import ItemGrid from "../../components/ItemGrid";
 
 const Articles: NextPage = () => {
-  return <div className="bg-zinc-800">hello</div>;
+  return (
+    <div>
+      <ItemGrid title="Articles" />
+    </div>
+  );
 };
 
 export default Articles;

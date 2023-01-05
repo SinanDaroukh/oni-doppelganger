@@ -1,9 +1,9 @@
 import Image from "next/image";
-import OniLogo from "../public/footer/oni-logo-footer.png";
-import VisaLogo from "../public/footer/visa-logo.svg";
-import MastercardLogo from "../public/footer/mastercard-logo.svg";
-import AppleLogo from "../public/footer/apple-pay-logo.svg";
-import AmexLogo from "../public/footer/amex-logo.svg";
+import OniLogo from "../../public/footer/oni-logo-footer.png";
+import VisaLogo from "../../public/footer/visa-logo.svg";
+import MastercardLogo from "../../public/footer/mastercard-logo.svg";
+import AppleLogo from "../../public/footer/apple-pay-logo.svg";
+import AmexLogo from "../../public/footer/amex-logo.svg";
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
           <a>Mentions légales</a>
           <a>Politique de confidentialité</a>
           <a>Contact</a>
-          <a>Conditions d'utilisation</a>
+          <a>Conditions d`&apos;` utilisation</a>
           <a>Politique de remboursement</a>
         </div>
         <div className="col-span-3 justify-self-end">

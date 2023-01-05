@@ -1,7 +1,7 @@
 import Head from "next/head";
-import DiscountBanner from "../components/DiscountBanner";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import DiscountBanner from "../DiscountBanner";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }: any) => {
   return (

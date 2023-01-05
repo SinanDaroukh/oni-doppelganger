@@ -1,5 +1,5 @@
 import Image from "next/image";
-import OniLogo from "../public/oni-logo.png";
+import OniLogo from "../../public/oni-logo.png";
 import Link from "next/link";
 
 export default function Navbar() {
