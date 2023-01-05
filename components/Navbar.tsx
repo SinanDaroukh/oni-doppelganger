@@ -1,17 +1,18 @@
 import Image from "next/image";
 import OniLogo from "../public/oni-logo.png";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="grid grid-cols-7 my-8">
-      <div className="flex items-center col-span-3 justify-self-center">
+    <div className="my-8 grid grid-cols-7">
+      <div className="col-span-3 flex items-center justify-self-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 stroke-white"
+          className="h-6 w-6 stroke-white"
         >
           <path
             strokeLinecap="round"
@@ -20,15 +21,16 @@ export default function Navbar() {
           />
         </svg>
       </div>
-      <div className="flex flex-col justify-self-center items-center">
+      <div className="flex flex-col items-center justify-self-center">
         <Image src={OniLogo} alt="Website Logo" />
-        <div className="flex flex-row gap-4 text-slate-50 mt-4">
-          <p>Accueil</p>
-          <p>Articles</p>
+        <div className="mt-4 flex flex-row gap-4 text-slate-50">
+          <Link href="/">Accueil</Link>
+          <Link href="/collections/articles">Articles</Link>
+          <Link href="/collections/accessoires">Accessoires</Link>
           <p>Contact</p>
         </div>
       </div>
-      <div className="flex items-center col-span-3 justify-self-center gap-3">
+      <div className="col-span-3 flex items-center gap-3 justify-self-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
