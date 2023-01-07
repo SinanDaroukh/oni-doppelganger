@@ -22,12 +22,30 @@ export default function Navbar() {
         </svg>
       </div>
       <div className="flex flex-col items-center justify-self-center">
-        <Image src={OniLogo} alt="Website Logo" />
+        <Link href="/">
+          <Image src={OniLogo} alt="Website Logo" className="cursor-pointer" />
+        </Link>
         <div className="mt-4 flex flex-row gap-4 text-slate-50">
-          <Link href="/">Accueil</Link>
-          <Link href="/collections/articles">Articles</Link>
-          <Link href="/collections/accessoires">Accessoires</Link>
-          <p>Contact</p>
+          <Link href="/">
+            <p className="cursor-pointer underline-offset-4 hover:underline">
+              Accueil
+            </p>
+          </Link>
+          <Link href="/collections/articles">
+            <p className="cursor-pointer underline-offset-4 hover:underline">
+              Articles
+            </p>
+          </Link>
+          <Link href="/collections/accessoires">
+            <p className="cursor-pointer underline-offset-4 hover:underline">
+              Accessoires
+            </p>
+          </Link>
+          <Link href="/contact">
+            <p className="cursor-pointer underline-offset-4 hover:underline">
+              Contact
+            </p>
+          </Link>
         </div>
       </div>
       <div className="col-span-3 flex items-center gap-3 justify-self-center">

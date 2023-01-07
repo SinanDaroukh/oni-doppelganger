@@ -6,6 +6,7 @@ import AppleLogo from "../../public/footer/apple-pay-logo.svg";
 import AmexLogo from "../../public/footer/amex-logo.svg";
 import CBLogo from "../../public/footer/cb-logo.svg";
 import ShopPayLogo from "../../public/footer/shop-pay-logo.svg";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -19,9 +20,12 @@ export default function Footer() {
           <a className="">Conditions Générales de Vente</a>
           <a>Mentions légales</a>
           <a>Politique de confidentialité</a>
-          <a>Contact</a>
+          <Link href="/contact">
+            <p className=" underline-offset-4 hover:underline">Contact</p>
+          </Link>
           <a>Conditions d&apos;utilisation</a>
           <a>Politique de remboursement</a>
+          <a>À propos de ce site</a>
         </div>
         <div className="col-span-3 justify-self-end">
           <Image src={OniLogo} alt="Website Footer Logo" />

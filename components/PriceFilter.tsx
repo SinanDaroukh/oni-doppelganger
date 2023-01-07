@@ -37,7 +37,7 @@ export default function PriceFilter({ name }: any) {
               <p className="">€</p>
               <input
                 name="field_name"
-                className="mx-1  w-24 rounded-3xl border border-2 border-gray-500 bg-zinc-800 px-4 py-2"
+                className="mx-1  w-24 rounded-3xl border-2 border-gray-500 bg-zinc-800 px-4 py-2"
                 type="text"
                 placeholder="De"
               />
@@ -46,7 +46,7 @@ export default function PriceFilter({ name }: any) {
               <p className="">€</p>
               <input
                 name="field_name"
-                className="mx-1 w-24 rounded-3xl border border-2 border-gray-500 bg-zinc-800 px-4 py-2"
+                className="mx-1 w-24 rounded-3xl border-2 border-gray-500 bg-zinc-800 px-4 py-2"
                 type="text"
                 placeholder="À"
               />
