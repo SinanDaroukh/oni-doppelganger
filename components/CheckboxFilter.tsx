@@ -37,9 +37,8 @@ export default function CheckboxFilter({ name, filters }: any) {
             aria-labelledby="dropdownInformationButton"
           >
             {filters.map((filter: any, index: number) => (
-              <li className="flex items-center px-6 py-2">
+              <li key={index} className="flex items-center px-6 py-2">
                 <input
-                  key={index}
                   type="checkbox"
                   id={filter.value}
                   name="A3-confirmation"
