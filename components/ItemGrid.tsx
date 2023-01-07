@@ -1,4 +1,5 @@
 import CheckboxFilter from "./CheckboxFilter";
+import ItemCard from "./ItemCard";
 import PriceFilter from "./PriceFilter";
 import SortByFilter from "./SortByFilter";
 
@@ -37,13 +38,25 @@ export default function ItemGrid({ title }: any) {
   return (
     <div className="py-16 px-96 text-white">
       <p className="pb-20 text-5xl font-extrabold">{title}</p>
-      <div className="flex text-sm font-medium text-gray-400">
-        <p>Filtre :</p>
-        <CheckboxFilter name="Disponibilité" filters={stockFilters} />
-        <CheckboxFilter name="Taille" filters={sizeFilters} />
-        <PriceFilter name="Prix" />
-        <p>Trier par :</p>
-        <SortByFilter filters={sortByFilters} />
+      <div className="flex items-center justify-between text-sm font-medium text-gray-400">
+        <div className="flex">
+          <p>Filtre :</p>
+          <CheckboxFilter name="Disponibilité" filters={stockFilters} />
+          <CheckboxFilter name="Taille" filters={sizeFilters} />
+          <PriceFilter name="Prix" />
+        </div>
+        <div className="flex gap-4">
+          <p>Trier par :</p>
+          <SortByFilter filters={sortByFilters} />
+          <p>6 produits</p>
+        </div>
+      </div>
+      <div className="grid  grid-cols-3 gap-6">
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
       </div>
     </div>
   );
