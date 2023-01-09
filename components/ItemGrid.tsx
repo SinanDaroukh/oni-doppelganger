@@ -51,7 +51,7 @@ export default function ItemGrid({ title }: any) {
           <p>6 produits</p>
         </div>
       </div>
-      <div className="grid  grid-cols-3 gap-6">
+      <div className=" my-6 grid  grid-cols-3 gap-6">
         <ItemCard />
         <ItemCard />
         <ItemCard />

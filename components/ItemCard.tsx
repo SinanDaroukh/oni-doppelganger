@@ -6,14 +6,22 @@ export default function ItemCard({ obj }: any) {
   return (
     <div className="mx-2 flex  flex-col text-white">
       <div className="my-6 text-center">
-        <Image
+        {/* <Image
           src="/KimonoGin.jpg"
           alt="Amex Logo"
-          className="w-1/2 overflow-hidden rounded-xl object-fill"
+          className="invisble overflow-hidden rounded-xl object-fill"
           objectFit="cover"
           width="361"
           height="457"
-        />
+        /> */}
+
+        <img className="block h-96 w-full rounded-xl bg-[url('/KimonoGin.jpg')] bg-cover bg-center bg-no-repeat bg-origin-border object-fill transition-all duration-200 ease-in-out hover:bg-[url('/DosGin.jpg')] " />
+        {/* <Image
+          alt="Amex Logo"
+          className=" overflow-hidden rounded-xl bg-[url('/KimonoGin.jpg')] object-fill"
+          objectFit="cover"
+          src={""}
+        /> */}
 
         {/* <img
           src="/KimonoGin.jpg"
@@ -37,7 +45,7 @@ export default function ItemCard({ obj }: any) {
         </div>
       </div>
 
-      <button className="mt-10 w-full rounded-full border py-3  text-white hover:border-2">
+      <button className="mt-10 w-full rounded-full py-3  text-white outline outline-1 hover:outline-2">
         Choisir sa taille
       </button>
     </div>
